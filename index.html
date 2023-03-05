@@ -1,0 +1,95 @@
+<html>
+
+<head>
+  <title>gestos em emoji</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <center>
+
+      <h3 class="btn btn-warning heading">
+        pagina de identificação de gestos em emoji
+      </h3>
+
+      <br>
+      <br>
+
+      <span>&#128070;</span>
+      <span>&#128071;</span>
+      <span>&#128072;</span>
+      <span>&#128073;</span>
+      <span>&#128074;</span>
+
+      <br>
+      <br>
+
+      <p style="font-size: 22px;">Tire sua selfie para gerar o emoji
+        <br>
+        <b style="color: yellow">Você está DE BOASSA?</b>
+        <br>
+        <b style="color: rgb(64, 0, 255)">Você está JOIA?</b>
+        <br>
+        <b style="color: red">Você está NA PAZ?</b>
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Sua webcam:</label>
+
+        <div id="camera"></div>
+
+        <br>
+        <br>
+
+        <button onclick="tirarSelfie()" class="btn btn-warning ">tirar selfie</button>
+
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>previsão 1:</label>
+
+        <p class="emoção" id="resultadoEmoção"></p>
+
+        <p class="emogi" id="attEmogi"></p>
+
+        <label>previsão 2:</label>
+
+       <p class="emoção" id="resultadoEmoção2"></p>
+
+        <p class="emogi" id="attEmogi2"></p>
+
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+
+        <label>foto:</label>
+
+        <div id="resultado"></div>
+
+        <br>
+        <br>
+
+        <button onclick="checar()" class="btn btn-success">prever emoção</button>
+
+      </div>
+
+    </center>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
